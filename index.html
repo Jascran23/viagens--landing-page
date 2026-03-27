@@ -3,59 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Viagem</title>
+  <title>TripMe</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAV -->
-   <header id="home">
-        <nav>
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#trip">TripMe</a></li>
-            <li><a href="#meet">MeetUs</a></li>
-            <li><a href="#advice">Advice</a></li>
-            </ul>
-        </nav>
-   </header>
-  
-  <!-- MAIN -->
-  <main id="main">
 
-    <!-- BANNER -->
-    <section class="banner">
-      <div class="overlay">
-        <h1>Descubra Lugares Incríveis</h1>
-        <p>Viaje pelo mundo sem sair de casa</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">TripMe</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#trip">TripMe</a></li>
+      <li><a href="#meet">MeetUs</a></li>
+      <li><a href="#advice">Advice</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Descubra Lugares Incríveis</h1>
+      <p>Explore o mundo com experiências únicas</p>
+      <a href="#trip" class="btn-primary">Explorar</a>
+    </div>
+  </header>
+
+  <!-- TRIP -->
+  <section id="trip" class="section">
+    <h2>Destinos Populares</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+        <h3>Paris</h3>
+        <p>Romance, cultura e história em cada esquina.</p>
       </div>
-    </section>
 
-    <!-- SEÇÃO TripMe -->
-    <section id="trip" class="section">
-      <h2>TripMe</h2>
-      <p>Explore destinos incríveis na Europa com paisagens únicas e cultura rica.</p>
-      <a href="#home" class="btn">Voltar ao topo</a>
-    </section>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="Itália">
+        <h3>Itália</h3>
+        <p>Arquitetura clássica e culinária inesquecível.</p>
+      </div>
 
-    <!-- SEÇÃO MeetUs -->
-    <section id="meet" class="section">
-      <h2>MeetUs</h2>
-      <p>Somos apaixonados por viagens e queremos compartilhar experiências únicas.</p>
-      <a href="#home" class="btn">Voltar ao topo</a>
-    </section>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Grécia">
+        <h3>Grécia</h3>
+        <p>Paisagens paradisíacas e águas cristalinas.</p>
+      </div>
+    </div>
 
-    <!-- SEÇÃO Advice -->
-    <section id="advice" class="section">
-      <h2>Advice</h2>
-      <p>Dicas essenciais para aproveitar melhor sua viagem.</p>
-      <a href="#home" class="btn">Voltar ao topo</a>
-    </section>
+    <a href="#home" class="btn-secondary">Voltar ao topo</a>
+  </section>
 
-  </main>
+  <!-- MEET -->
+  <section id="meet" class="section alt">
+    <div class="meet-container">
+      <div class="text">
+        <h2>Quem somos</h2>
+        <p>Somos apaixonados por viagens e criamos experiências inesquecíveis para você explorar o mundo.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="Equipe">
+    </div>
+    <a href="#home" class="btn-secondary">Voltar ao topo</a>
+  </section>
+
+  <!-- ADVICE -->
+  <section id="advice" class="section">
+    <h2>Dicas de Viagem</h2>
+
+    <div class="advice-list">
+      <div class="advice-item">✈️ Planeje com antecedência</div>
+      <div class="advice-item">💰 Controle seu orçamento</div>
+      <div class="advice-item">📍 Explore além do óbvio</div>
+    </div>
+
+    <a href="#home" class="btn-secondary">Voltar ao topo</a>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Minha Viagem</p>
+    <p>© 2026 TripMe - Todos os direitos reservados</p>
   </footer>
 
 </body>
